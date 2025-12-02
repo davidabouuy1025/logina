@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Login</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <canvas id="space-bg"></canvas>
+
+    <!-- Side panel -->
+    <div id="side-panel" class="side-panel collapsed">
+        <button id="toggle-panel" class="toggle-btn">☰ Menu</button>
+        <div class="sections">
+            <button class="section-btn" data-section="login">Login</button>
+            <button class="section-btn" data-section="create">Create Account</button>
+            <button class="section-btn" data-section="view">View Accounts</button>
+        </div>
+    </div>
+
+    <!-- Main content cards -->
+    <div class="card-container">
+        <div id="login" class="feature-card">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label>Username</label>
+                <input id="username" type="text">
+
+                <label>Password</label>
+                <input id="password" type="password">
+
+                <div id="alert_msg" class="alert_msg"></div>
+
+                <input type="submit" value="Login" class="btn">
+            </form>
+        </div>
+
+        <div id="create" class="feature-card hidden">
+            <h2>Create Account</h2>
+            <form id="create-form">
+                <label>Username</label>
+                <input id="new-username" type="text">
+
+                <label>Password</label>
+                <input id="new-password" type="password">
+
+                <div id="create-msg" class="alert_msg"></div>
+
+                <input type="submit" value="Create" class="btn">
+            </form>
+        </div>
+
+        <div id="view" class="feature-card hidden">
+            <h2>View Accounts</h2>
+            <div id="accounts-list" class="alert_msg">No accounts yet</div>
+        </div>
+    </div>
+
+    <script src="js/create.js"></script>
+    <script src="js/show.js"></script>
+    <script src="js/background-test.js"></script>
+    <script src="js/panel.js"></script>
+</body>
+
+</html>
