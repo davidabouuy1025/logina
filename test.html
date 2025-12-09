@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,7 @@
             <button class="section-btn" data-section="login">Login</button>
             <button class="section-btn" data-section="create">Create Account</button>
             <button class="section-btn" data-section="view">View Accounts</button>
+            <button class="section-btn" data-section="setting">Setting</button>
         </div>
     </div>
 
@@ -31,9 +33,9 @@
                 <label>Password</label>
                 <input id="password" type="password">
 
-                <div id="alert_msg" class="alert_msg"></div>
+                <div id="login-alert_msg" class="alert_msg"></div>
 
-                <input type="submit" value="Login" class="btn">
+                <input id="login-submit" type="submit" value="Login" class="btn">
             </form>
         </div>
 
@@ -46,22 +48,51 @@
                 <label>Password</label>
                 <input id="new-password" type="password">
 
-                <div id="create-msg" class="alert_msg"></div>
+                <div id="create-alert_msg" class="alert_msg"></div>
 
-                <input type="submit" value="Create" class="btn">
+                <input id="create-submit" type="submit" value="Create" class="btn">
             </form>
         </div>
 
         <div id="view" class="feature-card hidden">
             <h2>View Accounts</h2>
-            <div id="accounts-list" class="alert_msg">No accounts yet</div>
+            <div id="accounts-wrapper">
+                <div id="accounts-list"></div>
+                <div id="pagination"></div>
+            </div>
+        </div>
+
+        <div id="setting" class="setting-feature-card hidden">
+            <h2>Settings</h2>
+            <div class="setting-container">
+                <!-- Left: Description (70%) -->
+                <div class="setting-left">
+                    <h3>Delete User</h3>
+                    <p>Select an user and remove it from the database</p>
+                    <br>
+                    <h3>Delete All Accounts</h3>
+                    <p>This will permanently delete all stored usernames and passwords.</p>
+                    <br>
+                </div>
+                <!-- Right: Button (30%) -->
+                <div class="setting-right">
+                    <button id="delete-user" class="danger-btn">Delete User</button>
+                    <button id="delete-all-btn" class="danger-btn">Delete All</button>
+                </div>
+            </div>
+
+            <div id="delete-alert" class="alert_msg"></div>
+
         </div>
     </div>
 
-    <script src="js/create.js"></script>
-    <script src="js/show.js"></script>
-    <script src="js/background-test.js"></script>
-    <script src="js/panel.js"></script>
+    <script src="js/login.js" defer></script>
+    <script src="js/create.js" defer></script>
+    <script src="js/show.js" defer></script>
+    <script src="js/delete_all.js" defer></script>
+    <script src="js/delete.js" defer></script>
+    <script src="js/background-test.js" defer></script>
+    <script src="js/panel.js" defer></script>
 </body>
 
 </html>
