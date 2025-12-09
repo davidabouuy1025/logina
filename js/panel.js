@@ -8,7 +8,10 @@ toggleBtn.addEventListener("click", () => {
 
 // switch sections
 const sectionBtns = document.querySelectorAll(".section-btn");
-const featureCards = document.querySelectorAll(".feature-card");
+
+const featureCards = document.querySelectorAll(
+    ".feature-card, .setting-feature-card"
+);
 
 sectionBtns.forEach(btn => {
     btn.addEventListener("click", () => {
