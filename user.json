@@ -1,50 +1,18 @@
 [
     {
-        "username": "asd",
-        "password": "asd123"
+        "username": "username1",
+        "password": "$2b$12$xl2jeln8y4Kgrb8LCtIqXu9F4Hd4540DpSZKLpTY8mGmJfh9HHfbq"
     },
     {
-        "username": "bvc",
-        "password": "bvc1234"
+        "username": "username2",
+        "password": "$2b$12$gpzXXEMVMqMkEsizJyjqK.OOLUEVruBri6sfIwHUAdNWg.7b97B8G"
     },
     {
-        "username": "asd",
-        "password": "asd123"
+        "username": "username3",
+        "password": "$2b$12$q9VPCatMdkOIhnXL4.Iw5eWqr0TaUYhj15WL/yJmiNk5PPRowpRYq"
     },
     {
-        "username": "asd",
-        "password": "asd123"
-    },
-    {
-        "username": "string",
-        "password": "string"
-    },
-    {
-        "username": "string",
-        "password": "string"
-    },
-    {
-        "username": "string",
-        "password": "string"
-    },
-    {
-        "username": "jun",
-        "password": "123"
-    },
-    {
-        "username": "ming",
-        "password": "1234"
-    },
-    {
-        "username": "testing1",
-        "password": "testing123"
-    },
-    {
-        "username": "testing2",
-        "password": "testing123"
-    },
-    {
-        "username": "testing3",
-        "password": "testing1234"
+        "username": "username4",
+        "password": "$2b$12$wKyyo.yNcWCXtMc9ukaBb.6R2zQCBUmI8H1Mujsyf5C5uQqGRxBtu"
     }
 ]
